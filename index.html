@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Ticaret</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Heared Alani -->
+    <header>
+      <h1>E-Ticaret</h1>
+      <input type="text" placeholder="Urun ismini giriniz..." />
+      <div>
+        <button class="sepet-btn">Sepet</button>
+        <button>Kayit ol</button>
+        <button>Giris Yap</button>
+      </div>
+    </header>
+    <!-- Ana Iicerik -->
+
+    <main>
+      <!-- Kategoriler -->
+      <section id="category-sec">
+        <h1>Kategoriler</h1>
+        <div class="categories"></div>
+      </section>
+
+      <!-- Urunler -->
+      <section id="product-sec">
+        <h1>Urunler</h1>
+        <div class="products"></div>
+      </section>
+
+      <!-- Module -->
+
+      <div class="modal-wrapper">
+        <div class="modal-inner">
+          <div class="icon">
+            <img class="close-btn" src="./images/close.png" />
+          </div>
+          <!-- Module icindeki urunler -->
+          <div class="modal-titles">
+            <div></div>
+            <p>Product Name</p>
+            <p>Price</p>
+            <p>Amount</p>
+            <div></div>
+          </div>
+          <div class="list"></div>
+
+          <div class="total-p">
+            <p>Toplam : <span class="total-span">0 </span>$</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
